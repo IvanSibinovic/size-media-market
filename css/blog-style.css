@@ -1,0 +1,65 @@
+.article {
+  margin: 100px auto;
+  text-align: center;
+}
+.articleContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blogContent {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.abstract {
+  font-size: 19px;
+}
+.articleContent > h1 {
+  font-size: 2em;
+}
+.articleContent > hr {
+  margin: 1em 15em;
+}
+.alignLeft {
+  text-align: left;
+}
+.imgFluid {
+  max-width: 100%;
+  height: auto;
+}
+.underCaption {
+  font-size: 14px;
+}
+.special {
+  font-size: 1.25em;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+.blgCardHolder {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.sideBar {
+  width: 29%;
+  display: inline-block;
+}
+.blgCard {
+  width: 200px;
+  background-color: green;
+  border: 2px solid #000;
+}
+@media(max-width: 800px) {
+  .articleContent > hr {
+  margin: 1em 7em;
+}
+.blogContent {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.margin-x {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+}
