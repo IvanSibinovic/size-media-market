@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Size Media Market</title>
+
+    <!-- Required meta tags -->
+    <meta property="og:image" content="media/img/smm.jpg">
+    <meta charset="utf-8">
+	<meta property="og:image:alt" content="Size-Media-Marketing">
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="600px" />
+	<meta property="og:image:height" content="400px" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+    content="Size Media Marketing is a worldwide service for job seekers and enterpreneurs. Our database contains thousands of workers and dozens of companies. If you are an enterpreneur We are here to create the best promotional campaign for your products and services">
+    <meta name="keywords" content="job seekers, find a job">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- My Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+		<div class="overlaid"></div>
+		<nav>
+			<div id="shrinked" class="toggle"><a href='#'><img src='media/img/smm-logo-zeleni.png' style="padding-top: 3px; height: 45px;"></a><i
+	        class="fas fa-bars menu" aria-hidden="true"></i></div>
+	        <div id="logoWide">
+	        	<a href="#">
+	        		<div id="logo-img"><img src="media/img/smm-logo-zeleni.png" style="padding-top: 3px; height: 45px;"></div><span id="logo-txt">Size Media Market</span>
+	        	</a>
+	        </div>
+	        <ul>
+	        	<li class="tags return"><a href="index.html">HOME</a></li>
+		    	<li class="tags"><a href="index.html#kako">FOR EMPLOYEES</a></li>
+		    	<li class="tags"><a href="index.html#poziv">FOR AGENTS</a></li>
+			    <li class="tags"><a href="index.html#contact">CONTACT</a></li>
+	    	</ul>
+		</nav>
+
+
+ <!-- Loader 1 -->
+ <div class="preload">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+</div>
+
+
+<section id="jobs" class="container2 pt-3">
+	<div class="txt-holder">
+    	<h2>Job listing:</h2>
+		<p>Job offer from more than a 100 companies</p>
+		<div class="ad">
+			<h4 class="jobTitle">Housekeeper</h4>
+			<span class="ex"> in </span>
+			<p class="jobExpl">Dortmund, North Rhine-Westphalia, Germany</p>
+			<p class="jobExpl"><span class="ex"> | </span>Salary: <span>1500,00€/month</span></p>
+			<div><a href="">Apply</a></div>
+		</div>
+		<div class="ad">
+			<h4 class="jobTitle">Cook</h4>
+			<span class="ex"> in </span>
+			<p class="jobExpl">Dubai, United Arab Emirates</p>
+			<p class="jobExpl"><span class="ex"> | </span>Salary: <span>2500,00€/month</span></p>
+			<div><a href="">Apply</a></div>
+		</div>
+		<div class="ad">
+			<h4 class="jobTitle">Mechanic</h4>
+			<span class="ex"> in </span>
+			<p class="jobExpl">Rheims, Champagne-Ardenne, France</p>
+			<p class="jobExpl"><span class="ex"> | </span>Salary: <span>1800,00€/month</span></p>
+			<div><a href="">Apply</a></div>
+		</div>
+    </div>
+	<style type="text/css">
+		.aa {
+			display: inline;
+			background-color: #f7f7f7;
+			color: #000;
+			padding: 20px;
+			cursor: pointer;
+		}
+	</style>
+	<div style="text-align: center;"><p class="aa" onclick="popup()">Iskačući</p></div>
+   
+</section>
+
+<div class="overlaid2"></div>
+    <div class="popup">
+        <a id="xClose"><i class="fas fa-times"></i></a>
+        <p class="lead">Jos uvek niste našli posao?</p>
+        <p>Prijavi se za pomoć naših agenata</p>
+        <form action="index.php" method="post">
+        	<input type="text" class="form-control" name="newsletterEmail" placeholder="Unesi svoj email"value="">
+        	<div class="input-group-append">
+        		<button type="submit" class="btn" name="newsletterBtn"><i class="fas fa-paper-plane"></i> Pošalji</button>
+           </div>
+       </form>
+   </div>
+  <script src="js/generals.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript">
+  	function popup() {
+  		$('.overlaid2').toggleClass('overlay2appear');
+  		$('.popup').toggleClass('popupAppear');
+  	}
+  	$(".popup a, .overlaid2").click(function(){
+  		$('.overlaid2').removeClass('overlay2appear');
+  		$('.popup').removeClass('popupAppear');
+  	});
+  </script>
+</body>
+</html>

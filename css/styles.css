@@ -1,5 +1,4 @@
 html {
-
   scroll-behavior: smooth;
 
 }
@@ -10,7 +9,7 @@ body{
 
   box-sizing: border-box;
 
-font-family: 'Exo 2', sans-serif;
+font-family: 'Montserrat', sans-serif;
 
   font-size:1rem;
 
@@ -84,7 +83,7 @@ font-family: 'Exo 2', sans-serif;
 
   display: inline-block;
 
-  background-color: #FBA92E;
+  background-color: #46b946;
 
   height: 40px;
 
@@ -294,7 +293,7 @@ ul li a:hover {
 
 nav ul li.return a {
 
-  color: #FBA92E; 
+  color: #46b946; 
 
 }
 
@@ -353,7 +352,10 @@ nav ul li.return a {
 
 
 @media (max-width:1050px) {
-
+.ad div {
+  display: block;
+  margin-top: 20px;
+}
   .toggle {
 
     display: block;
@@ -649,7 +651,7 @@ ul {
 
   font-size: 60px;
 
-  color: #FBA92E;
+  color: #46b946;
 
 }
 
@@ -809,7 +811,7 @@ ul {
 
 .scroll-down {
 
-  color: #FBA92E;
+  color: #46b946;
 
   margin-top: 2rem;
 
@@ -843,14 +845,25 @@ ul {
   margin: 8px;
   font-size: 24px;
 }
-.lineHolder input[type=text], .lineHolder input[type=number], .lineHolder input[type=email], .lineHolder input[type=date] {
+.lineHolder input[type=text], .lineHolder input[type=number], .lineHolder input[type=email], .lineHolder input[type=date], select {
   width: 400px;
   height: 30px;
   font-size: 22px;
   font-family: 'Exo 2', sans-serif;
 }
+select
 .lineHolder input[type=radio] {
   width: 25px;
+}
+.submit3 {
+  margin-top: 10px;
+  padding: 9px;
+  background-color: #46b946;
+  color: #000;
+  font-size: 27px;
+  border-radius: 4px;
+  border: 2px solid #777;
+  text-decoration: none;
 }
 .submit2 {
   margin-top: 10px;
@@ -863,14 +876,42 @@ ul {
 
   text-align: center; background-color: #dadada;padding-bottom: 1rem;}
 
-  .blogCard {
-
-    padding-bottom: 10px;
-
-    background-color: #fff;
-
-  }
-
+.angled {
+  position: absolute;
+  background-color: #fff;
+  overflow: hidden;
+  height: 18%;
+  width: 110%;
+  transform-origin: top left;
+  transform: rotate(-10deg);
+  z-index: 0;
+}
+.blogCard {
+  padding-bottom: 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.blogCard a, .blogCard p {
+  position: relative;
+  z-index: 2;
+}
+.blogCardText {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.blogCardText a {
+  text-align: right;
+}
+.blogCardText i {
+ position: absolute;
+ left: 5%;
+ bottom: 15%;
+ color: #777;
+ font-size: 30px;
+ opacity: 0.4;
+}
 .a {
 
   text-decoration: none;
@@ -1113,16 +1154,111 @@ ul {
 
 }
 
-#kako {
-
+#kako, #jobs {
   color: #f7f7f7;
-
   background-color: #333;
-
   padding-bottom: 3rem;
-
 }
-
+.ad {
+  margin-bottom: 20px;
+  padding: 20px 10px 20px 10px;
+  background-color: #46b946;
+  color: #000;
+  border-radius: 10px; 
+}
+.ad a {
+  padding: 15px;
+  background-color: #f4f4f4;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.ad div {
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+}
+.ad p, .ad h4 {
+  display: inline;
+}
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2.5rem 4rem;
+    width: 50%;
+    height: 50%;
+    background-color: #ddd;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1500;
+    display: none;
+}
+.popupAppear {
+    display: block;
+    animation: fade 1s;
+}
+.lead {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+.popup input {
+    padding: 4px 8px;
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.popup #xClose{
+    position: absolute;
+    top: 3px; 
+    right: 6px; 
+    margin: 0; 
+    line-height: 1;
+    font-size: 2em;
+    cursor: pointer;
+}
+.popup form{
+    margin: 2em auto;
+}
+.popup2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1.5rem 3rem;
+    width: 35%;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1300;
+}
+ .overlaid2 {
+     position: fixed;
+    /* Sit on top of the page content */
+     display: none;
+    /* Hidden by default */
+     width: 100%;
+    /* Full width (cover the whole page) */
+     height: 100%;
+    /* Full height (cover the whole page) */
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    /* Black background with opacity */
+    z-index: 50;
+    /* Specify a stack order in case you're using a different order for other elements */
+     cursor:pointer;
+     animation: fade 1s;
+}
+.overlay2appear{
+    display:block
+}
 #poziv {
 
   color: #f7f7f7;
@@ -1187,7 +1323,7 @@ ul {
 
 .next a {
 
-  color: #FBA92E;
+  color: #46b946;
 
   text-decoration: none;
 
@@ -1271,7 +1407,7 @@ line-height: 0;
 
   bottom: 0;
 
-  background-color: rgba(251,169,46,0.7);
+  background-color: rgba(70, 185, 70, 0.7);
 
   z-index: 0;
 
@@ -1328,7 +1464,13 @@ line-height: 0;
 
 
 @media (max-width:768px) {
-  .lineHolder input[type=text], .lineHolder input[type=number], .lineHolder input[type=email], .lineHolder input[type=date] {
+  .ad p, .ad h4 {
+    display: block;
+  }
+  .ad .ex {
+    display: none;
+  }
+.lineHolder input[type=text], .lineHolder input[type=number], .lineHolder input[type=email], .lineHolder input[type=date], select {
   width: 100%;
   height: 30px;
   font-size: 16px;
@@ -1385,7 +1527,9 @@ line-height: 0;
 }
 
 @media (max-width: 576px) {
-
+.ad div {
+  margin-top: 10px;
+}
   .row2 {
 
     display: block;
@@ -1398,20 +1542,14 @@ line-height: 0;
 
   }
 
-  .imgbkg {
-
+.imgbkg {
   background: url(../media/img/size-media-market-small.jpg) no-repeat top left;
-
-  height: 70vh;
-
+  height: 50vh;
 }
 
 .imgbkg2 {
-
   background: url(../media/img/hand-small.jpg) no-repeat bottom right;
-
   height: 70vh;
-
 }
 
 .parallax {
@@ -1446,4 +1584,9 @@ line-height: 0;
 
 }
 
+}
+@media (max-width: 400px ) {
+  .imgbkg2 {
+  background: url(../media/img/hand-smaller.jpg) no-repeat bottom right;
+}
 }
